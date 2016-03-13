@@ -1,5 +1,5 @@
 #!/bin/bash
-#encoding:utf-8
+#encoding:UTF-8
 #2015/6/17
 #lianglian8866@163.com
 
@@ -9,7 +9,8 @@
 
 ##判断OMSA套件支持
 #if [ ! -e /opt/dell/srvadmin/bin/omreport ]
-#then 	yum install srvadmin-omacs srvadmin-storage srvadmin-storelib srvadmin-isvc-snmp srvadmin-argtable2 srvadmin-storage-cli srvadmin-sysfsutils srvadmin-omcommon srvadmin-idrac7 srvadmin-rac4-populator srvadmin-idrac-vmcli srvadmin-realssd srvadmin-idracadm7 srvadmin-ominst srvadmin-deng-snmp srvadmin-omacore srvadmin-rac-components srvadmin-idrac-ivmcli srvadmin-itunnelprovider srvadmin-racdrsc srvadmin-omilcore srvadmin-isvc srvadmin-racsvc srvadmin-racadm4 srvadmin-oslog srvadmin-cm srvadmin-smcommon srvadmin-nvme srvadmin-racadm5 srvadmin-deng srvadmin-xmlsup srvadmin-storage-snmp srvadmin-rnasoap srvadmin-idrac-snmp srvadmin-storelib-sysfs srvadmin-idracadm srvadmin-hapi
+#then 	wget -q -O - http://linux.dell.com/repo/hardware/latest/bootstrap.cgi | bash
+# 	yum install srvadmin-all
 #fi
 #
 ##解决OMSA系统不支持问题
