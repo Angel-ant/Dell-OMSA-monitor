@@ -358,7 +358,7 @@ case $check in
 		Replacement_value2=$($MegaCli -AdpBbuCmd -GetBbuStatus -aALL | grep "Remaining Capacity Low " | awk -F ": " '{print $2}')
 		if [ -z $Replacement_value1 ] && [ -z $Replacement_value2 ];then exit 0;elif [ $Replacement_value1 != "Yes" ] || [ $Replacement_value2 != "Yes" ];then echo 1;else echo 0;fi
 		;;
-        dev_info)
+        dev_info)  #打印资产硬件详细信息总结
                 dev_cpu=$($CMD processors | grep "Connector Name" | awk -F ": " '{print $2}')
                 for dev in $dev_cpu
                 do
