@@ -41,9 +41,33 @@ zabbix ALL=(ALL)       NOPASSWD:/usr/sbin/MegaCli  （根据实际情况
 
 ### 执行脚本
 
+脚本格式
+
 ```
 check-dev.sh $1 $2 $3
 ```
+
+
+
+发现设备(**CPU**）
+
+```
+check-dev.sh discovery cpu
+```
+
+
+
+获取数据(**CPU状态**）
+
+```
+check-dev.sh get-data cpu_status
+```
+
+
+
+item都在脚本中有，具体看脚本。脚本low，轻喷，只是为了分享个方法。
+
+
 
 
 
